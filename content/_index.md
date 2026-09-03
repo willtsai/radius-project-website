@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Get Started"
-    link: "https://docs.radapp.io/getting-started"
+    link: "https://edge.docs.radapp.io/getting-started"
 
 ##################### Feature ##########################
 feature:
@@ -18,7 +18,7 @@ feature:
     - name: "App-centric Experiences"
       icon: "fas fa-window-maximize"
       content: "Developers can focus on their applications instead of underlying platform infrastructure"
-      
+
     # feature item loop
     - name: "Abstracted Runtimes"
       icon: "fas fa-layer-group"
@@ -28,17 +28,17 @@ feature:
     - name: "Separation of Concerns"
       icon: "fas fa-people-arrows"
       content: "Developers focus on their apps while operators focus on environments and infrastructure"
-      
+
     # feature item loop
     - name: "App Portability"
       icon: "fas fa-share-from-square"
       content: "Deploy your application across clouds and on-premises with zero app rewrites"
-      
+
     # feature item loop
     - name: "Consistent Tooling"
       icon: "fas fa-screwdriver-wrench"
       content: "Developers and operators can deploy, manage, and visualize applications with common tools"
-      
+
     # feature item loop
     - name: "Automated & Secure"
       icon: "fas fa-file-shield"
@@ -48,15 +48,26 @@ feature:
 service:
   enable: true
   service_item:
+
+    # Radius Canvas Extension in GitHub Copilot app
+    - title: "Model and deploy your app without leaving Copilot"
+      images:
+      - "images/gh-copilot-app.png"
+      content: "Now in preview, the Radius Canvas extension brings your application graph into the GitHub Copilot app. Describe what you're building in chat, and Radius turns your repository into a deployable application model. It renders the graph, diffs it visually between branches to highlight changes, and deploys it to your environments through GitHub Actions, all side by side with your code."
+      button:
+        enable: true
+        label: "Learn More"
+        link: "https://edge.docs.radapp.io/integrations/github-copilot-app/canvas-extension/"
+
     # Developer + Operator Collaboration
     - title: "Developer + Operator Collaboration"
       images:
       - "images/collaboration.png"
       content: "Developers define Applications and their dependencies, not the underlying infrastructure. Operators define Environments with platform configuration, infrastructure, and policies that enforce their organization's requirements. Radius brings them together, deploying applications and infrastructure that meet both developer and operator requirements."
       button:
-        enable: false
+        enable: true
         label: "Learn More"
-        link: "https://docs.radapp.io/concepts/applications/"
+        link: "https://edge.docs.radapp.io/concepts/"
 
     # Application Graph
     - title: "Application Graph"
@@ -64,10 +75,10 @@ service:
       - "images/connections.png"
       content: "Graphs are better than lists. Instead of managing endless lists of infrastructure and resources, Radius Applications capture the relationships and dependencies within an app. This graph can be used to both deploy and understand the application."
       button:
-        enable: false
+        enable: true
         label: "Learn More"
-        link: "https://docs.radapp.io/concepts/applications/"
-      
+        link: "https://edge.docs.radapp.io/concepts/applications/"
+
     #  Environments and Recipes
     - title: "Infrastructure Recipes"
       images:
@@ -76,13 +87,17 @@ service:
       button:
         enable: true
         label: "Learn More"
-        link: "https://docs.radapp.io/guides/recipes/"
+        link: "https://edge.docs.radapp.io/concepts/recipe-packs/"
 
     # Cloud neutral
     - title: "Cloud Neutral"
       images:
       - "images/platforms.png"
       content: "Teams want tools and solutions that don't lock them into a specific cloud or platform. Radius is open-source and multi-cloud from the start. With Radius, you can deploy across development environments, on-premises infrastructure, and your public clouds of choice, with a single, consistent tooling experience."
+      button:
+        enable: true
+        label: "Learn More"
+        link: "https://edge.docs.radapp.io/installation/cloud-providers/"
 
     # Dapr
     - title: "Dapr + Radius: Better Together"
@@ -92,14 +107,18 @@ service:
       button:
         enable: true
         label: "Learn More"
-        link: "https://docs.radapp.io/guides/author-apps/dapr/overview/"
+        link: "https://edge.docs.radapp.io/integrations/dapr/"
 
     # Meet Customers where they are
     - title: "Leverage Existing Tools"
       images:
       - "images/tooling.png"
       content: "Radius meets application teams where they are by supporting proven technologies like Kubernetes, existing infrastructure tools including Terraform and Bicep, and by integrating with existing CI/CD systems like GitHub Actions and Azure DevOps Pipelines."
-        
+      button:
+        enable: true
+        label: "Learn More"
+        link: "https://edge.docs.radapp.io/integrations/"
+
 ################### Screenshot ########################
 screenshot:
   enable: true
@@ -115,7 +134,7 @@ call_to_action:
   button:
     enable: true
     label: "Get Started"
-    link: "https://docs.radapp.io/getting-started/"
+    link: "https://edge.docs.radapp.io/getting-started/"
 
 ##################### CNCF ###########################
 cncf:

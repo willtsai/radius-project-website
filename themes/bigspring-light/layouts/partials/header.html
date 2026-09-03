@@ -64,5 +64,15 @@
       </div>
     </nav>
   </div>
+  {{ with site.Params.announcement }}
+  {{ if .enable }}
+  <aside class="announcement" aria-label="Announcement">
+    <div class="container announcement-inner">
+      <span>{{ .content }}</span>
+      <a href="{{ .link | safeURL }}">{{ .label }} <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </aside>
+  {{ end }}
+  {{ end }}
 </header>
 {{ "<!-- /navigation -->" | safeHTML }}
